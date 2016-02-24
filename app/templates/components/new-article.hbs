@@ -2,6 +2,17 @@
 
 <div>
   <form>
+    <!-- <div class="form-group">
+      <label for="category">Category</label>
+      {{#x-select  value=category  action="selectCategory" default=NEWS}}
+        {{#x-option value=NEWS}}News{{/x-option}}
+        {{#x-option value=ENTERTAINMENT}}Entertainment{{/x-option}}
+        {{#x-option value=FASHION}}Fashion{{/x-option}}
+        {{#x-option value=LIFESTYLE}}Lifestyle{{/x-option}}
+        {{#x-option value=BOOKS}}Books{{/x-option}}
+      {{/x-select}}
+    </div> -->
+
     <div class="form-group">
       <label for="title">Article Title</label>
       {{input value=title id="title"}}
@@ -17,9 +28,9 @@
       {{input value=image id="image"}}
     </div>
 
+    <label for="body">Article body</label>
     <div class="form-group">
-      <label for="body">Article body</label>
-      {{textarea value=body id="body" cols="80" rows="80"}}
+      {{textarea value=body id="body" cols="80" rows="20"}}
     </div>
 
     <button {{action 'save1'}}>Save</button>

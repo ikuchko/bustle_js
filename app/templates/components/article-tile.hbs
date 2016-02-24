@@ -1,0 +1,8 @@
+<div class="col-md-4">
+  {{#link-to 'article' article.id}}
+    <img src={{article.image}} alt={{article.title}} />
+    <h4>{{article.title}}</h4>
+  {{/link-to}}
+  <hr>
+  <p><span style="float:left;">{{article.author}}</span> <span style="float:right;">{{article.time}}</span></p>
+</div>
